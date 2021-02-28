@@ -1,25 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import * as React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      result: 0
+    };
+
+    this.onChange = this.onChange.bind(this);
+  };
+
+  onChange(event) {
+    const result = this.calculation(event.target.value);
+    this.setState({result});
+  };
+
+  calculation(formula) {
+    try {
+      const filterd = formula.match(/[0-9]|\.|\*|\+|-|\/ /g);
+      if (filterd === null) return "";
+
+      return Function('"use strict"; return (' + filterd.join('') + ')')();
+    } catch (error) {
+      console.log({error: error});
+      return "?";
+    }
+  };
+
+  render() {
+    return (
+      <div>
+        <h1>簡易計算機</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <input type="text" onChange={this.onChange} /> = <input type="text" value={this.state.result} readOnly />
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      </div>
+    );
+  }
 }
-
-export default App;
