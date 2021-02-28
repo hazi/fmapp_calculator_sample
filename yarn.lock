@@ -5460,6 +5460,15 @@ html-minifier-terser@^5.0.1:
     relateurl "^0.2.7"
     terser "^4.6.3"
 
+html-webpack-inline-source-plugin@1.0.0-beta.2:
+  version "1.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/html-webpack-inline-source-plugin/-/html-webpack-inline-source-plugin-1.0.0-beta.2.tgz#71a9234c170ef18df6e51f4594a09b540ff03111"
+  integrity sha512-ydsEKdp0tnbmnqRAH2WSSMXerCNYhjes5b79uvP2BU3p6cyk+6ucNMsw5b5xD1QxphgvBBA3QqVmdcpu8QLlRQ==
+  dependencies:
+    escape-string-regexp "^1.0.5"
+    slash "^1.0.0"
+    source-map-url "^0.4.0"
+
 html-webpack-plugin@4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-4.5.0.tgz#625097650886b97ea5dae331c320e3238f6c121c"
@@ -8907,6 +8916,13 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-app-rewired@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/react-app-rewired/-/react-app-rewired-2.1.8.tgz#e192f93b98daf96889418d33d3e86cf863812b56"
+  integrity sha512-wjXPdKPLscA7mn0I1de1NHrbfWdXz4S1ladaGgHVKdn1hTgKK5N6EdGIJM0KrS6bKnJBj7WuqJroDTsPKKr66Q==
+  dependencies:
+    semver "^5.6.0"
+
 react-dev-utils@^11.0.3:
   version "11.0.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-11.0.3.tgz#b61ed499c7d74f447d4faddcc547e5e671e97c08"
@@ -9773,6 +9789,11 @@ sisteransi@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
   integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
+
+slash@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+  integrity sha1-xB8vbDn8FtHNF61LXYlhFK5HDVU=
 
 slash@^3.0.0:
   version "3.0.0"
